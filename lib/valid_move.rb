@@ -1,12 +1,13 @@
 # code your #valid_move? method here
 
 def valid_move?(board, index)
+  
   if index < 1 || index > 9
   index_validity = false  
   else index_validity = true
   end
 
-  if index_validity == true && position_taken(board,index) == false
+  if index_validity == true && position_taken?(board,index) == false
     true
   else
     false
